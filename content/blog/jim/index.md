@@ -1,6 +1,7 @@
 ---
-title: Jim Kwik - 10-day program to jumpstart for the Book
+title: Limitless
 date: "2020-04-27T22:00:00.000Z"
+description: "10-day program to jumpstart for the Book by Jim Kwik"
 ---
 This is the learning journal of the [10-day jumpstart program](https://www.kwiklearningonline.com/) for the Book [Limitless](https://amzn.to/35bNxjW).
 
