@@ -1,15 +1,15 @@
 module.exports = {
   pathPrefix: "/gatsby-blog",
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Social Reading Club`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `John C.`,
+      summary: `who lives and works in Canada.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `jhcao23`,
     },
   },
   plugins: [
