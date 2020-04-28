@@ -1,0 +1,11 @@
+.footer {
+    height: 30px;
+    /*position: relative;*/
+    margin-top: -50px;
+    padding: 1rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}

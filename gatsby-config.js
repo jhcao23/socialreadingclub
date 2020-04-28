@@ -6,8 +6,8 @@ module.exports = {
       name: `John C.`,
       summary: `who lives and works in Canada.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Social Reading Club`,
+    siteUrl: `https://www.SocialReadingClub.com/`,
     social: {
       twitter: `jhcao23`,
     },

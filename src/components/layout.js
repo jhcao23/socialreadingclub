@@ -2,8 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import Image from "gatsby-image"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, avatar, author, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
@@ -11,8 +12,8 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
+          ...scale(0.9),
+          marginBottom: rhythm(1),
           marginTop: 0,
         }}
       >
@@ -23,6 +24,19 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
+          <Image
+            fixed={avatar.childImageSharp.fixed}
+            alt={author.name}
+            style={{
+              marginRight: rhythm(1 / 2),
+              marginBottom: 0,
+              minWidth: 50,
+              borderRadius: `100%`,
+            }}
+            imgStyle={{
+              borderRadius: `50%`,
+            }}
+          />
           {title}
         </Link>
       </h1>
@@ -58,10 +72,10 @@ const Layout = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
+      <footer class="footer">
+        © {new Date().getFullYear()}, Built by
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.itouchmars.com">Touch Mars Solutions Inc.</a>
       </footer>
     </div>
   )

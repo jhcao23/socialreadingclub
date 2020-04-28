@@ -9,9 +9,10 @@ import { rhythm } from "../utils/typography"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-
+  const author = data.site.siteMetadata.author
+  const avatar = data.avatar
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} avatar={avatar} author={author}>
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {
@@ -48,9 +49,20 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query {
+    avatar: file(absolutePath: { regex: "/logo.png/" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+    }
     site {
       siteMetadata {
         title
+        author {
+          name
+          summary
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

@@ -5,11 +5,13 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import Image from "gatsby-image"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  const avatar = data.avatar
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -82,6 +84,13 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
+    avatar: file(absolutePath: { regex: "/logo.png/" }) {
+        childImageSharp {
+          fixed(width: 50, height: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+    }
     site {
       siteMetadata {
         title
