@@ -54,7 +54,34 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-82831809-2`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-facebook-analytics`,
+      options: {
+        // Required - set this to the ID of your Facebook app.
+        appId: `154103586026015`,
+
+        // Which version of the SDK to load.
+        version: `v6.0`,
+
+        // Determines whether XFBML tags used by social plugins are parsed.
+        xfbml: true,
+
+        // Determines whether a cookie is created for the session or not.
+        cookie: false,
+
+        // Include Facebook analytics in development.
+        // Defaults to false meaning the library will only be loaded in production.
+        includeInDevelopment: false,
+
+        // Include debug version of sdk
+        // Defaults to false meaning the library will load sdk.js
+        debug: false,
+
+        // Select your language.
+        language: `en_US`,
       },
     },
     `gatsby-plugin-feed`,

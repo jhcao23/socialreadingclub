@@ -14,7 +14,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const avatar = data.avatar
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} avatar={avatar}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
