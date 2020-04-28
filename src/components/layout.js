@@ -17,6 +17,19 @@ const Layout = ({ location, title, avatar, author, children }) => {
           marginTop: 0,
         }}
       >
+        <Image
+          fixed={avatar.childImageSharp.fixed}
+          alt={author.name}
+          style={{
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            minWidth: 50,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `100%`,
+          }}
+        />
         <Link
           style={{
             boxShadow: `none`,
@@ -24,19 +37,6 @@ const Layout = ({ location, title, avatar, author, children }) => {
           }}
           to={`/`}
         >
-          <Image
-            fixed={avatar.childImageSharp.fixed}
-            alt={author.name}
-            style={{
-              marginRight: rhythm(1 / 2),
-              marginBottom: 0,
-              minWidth: 50,
-              borderRadius: `100%`,
-            }}
-            imgStyle={{
-              borderRadius: `100%`,
-            }}
-          />
           {title}
         </Link>
       </h1>
@@ -49,6 +49,18 @@ const Layout = ({ location, title, avatar, author, children }) => {
           marginTop: 0,
         }}
       >
+        <Image
+          fixed={avatar.childImageSharp.fixed}
+          style={{
+            marginRight: rhythm(1 / 2),
+            marginBottom: 0,
+            minWidth: 50,
+            borderRadius: `100%`,
+          }}
+          imgStyle={{
+            borderRadius: `100%`,
+          }}
+        />
         <Link
           style={{
             boxShadow: `none`,
@@ -56,18 +68,7 @@ const Layout = ({ location, title, avatar, author, children }) => {
           }}
           to={`/`}
         >
-          <Image
-            fixed={avatar.childImageSharp.fixed}
-            style={{
-              marginRight: rhythm(1 / 2),
-              marginBottom: 0,
-              minWidth: 50,
-              borderRadius: `100%`,
-            }}
-            imgStyle={{
-              borderRadius: `100%`,
-            }}
-          />
+
           {title}
         </Link>
       </h3>
