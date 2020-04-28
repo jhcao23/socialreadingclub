@@ -84,6 +84,15 @@ module.exports = {
         language: `en_US`,
       },
     },
+    {
+      resolve: `gatsby-plugin-baidu-tongji`,
+      options: {
+        // 百度统计站点ID
+        siteid: "0772295ec9b8608ee8266f2a41205997",
+        // 配置统计脚本插入位置，默认值为 false, 表示插入到 body 中, 为 true 时插入脚本到 head 中
+        head: false,
+      },
+    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,

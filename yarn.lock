@@ -834,7 +834,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.9.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
   integrity sha512-NE2DtOdufG7R5vnfQUTehdTfNycfUANEtCa9PssN9O/xmTzP4E08UI797ixaei6hBEVL9BI/PsdJS5x7mWoB9Q==
@@ -5767,6 +5767,13 @@ gatsby-page-utils@^0.1.4:
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
+
+gatsby-plugin-baidu-tongji@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-baidu-tongji/-/gatsby-plugin-baidu-tongji-2.0.0.tgz#b718349fa929d9e218b91a2830e8d228ea30cb81"
+  integrity sha512-GtUsCdBXmq8XL/+uonaf7CA/3aKfrAHWOk2mW3sJZA9qKFPTl8uzAIXcUOMDMd2/wVhnvIeOxlgLuKEIxQ9+sQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
 
 gatsby-plugin-facebook-analytics@^2.4.0:
   version "2.4.0"
